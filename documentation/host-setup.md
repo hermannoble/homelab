@@ -2,8 +2,8 @@
 HOMELAB DOCUMENTATION
 ================================
 Document Version: 1.0
-Last Updated: [DATE]
-Maintained By: [YOUR NAME]
+Last Updated: [7/7/25]
+Maintained By: [Herman Noble]
 
 ================================
 PHYSICAL HOST DETAILS
@@ -16,19 +16,19 @@ Service Tag/Serial:
 
 HARDWARE SPECIFICATIONS:
 - Model: Dell Optiplex [Model]
-- CPU: 
-- RAM: [Amount] GB
-- Storage: 1TB SSD [Brand/Model]
+- CPU: i5-3470 @ 3.2 GHz
+- RAM: 16 GB
+- Storage: 1TB SSD Crucial
 - NIC: [Onboard/Additional]
 - GPU: [Model if applicable]
 
 ================================
 OPERATING SYSTEM
 ================================
-OS: Windows 11 Pro
+OS: Windows 10 Pro
 Version: [Run winver to check]
 Build: 
-License Type: [Retail/OEM/Volume]
+License Type: No License
 Install Date: 
 Last Major Update: 
 
@@ -36,11 +36,11 @@ Last Major Update:
 NETWORK CONFIGURATION
 ================================
 Primary NIC:
-- IP Address: 192.168.1.50
+- IP Address: 10.0.0.53
 - Subnet Mask: 255.255.255.0
-- Gateway: 
-- DNS Servers: 
-- MAC Address: 
+- Gateway: 10.0.0.1
+- DNS Servers: 75.75.75.75 and 75.75.76.76
+- MAC Address: 90:B1:1C:8B:3C:F7
 
 Remote Access:
 - RDP Port: 3389 (default)
@@ -49,8 +49,8 @@ Remote Access:
 ================================
 VIRTUALIZATION PLATFORM
 ================================
-Hypervisor: VirtualBox [Version]
-Install Date: 
+Hypervisor: VirtualBox 7.1.10
+Install Date: 7/7/25
 VM Storage Location: [Path]
 Network Configurations:
 - NAT Network: 
