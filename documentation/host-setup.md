@@ -29,8 +29,25 @@ OS: Windows 10 Pro
 Version: [Run winver to check]
 Build: 
 License Type: No License
-Install Date: 
+Install Date: 7/7/25
 Last Major Update: 
+
+## Post-Installation Configuration
+1. **Network Configuration**
+   - Set static IP via Network Adapter settings
+   - Disabled IPv6 (optional but recommended for lab)
+
+2. **Remote Access**
+   - Enabled Remote Desktop
+   - Windows Firewall exception added automatically
+
+3. **Power Settings**
+   - Disabled sleep/hibernation
+   - Set to High Performance power plan
+
+4. **Windows Updates**
+   - Completed initial updates
+   - Set active hours for overnight
 
 ================================
 NETWORK CONFIGURATION
@@ -53,8 +70,10 @@ Hypervisor: VirtualBox 7.1.10
 Install Date: 7/7/25
 VM Storage Location: [Path]
 Network Configurations:
-- NAT Network: 
+- NAT Network: 10.0.2.0/24
 - Host-Only Network: 192.168.100.0/24
+- Host IP: 192.168.100.1
+- DHCP: Disabled (DC01 will provide)
 
 ================================
 VIRTUAL MACHINES
@@ -63,8 +82,8 @@ VM #1: DC01
 - Role: Domain Controller
 - OS: Windows Server 2025
 - vCPU: 2
-- RAM: 4GB
-- Storage: 60GB
+- RAM: 6GB
+- Storage: 50GB
 - IP: 192.168.100.10
 - Created: [Date]
 - Last Snapshot: [Date]
