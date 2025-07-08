@@ -1,0 +1,38 @@
+# Network Topology
+
+## Current Lab Network Design
+Internet
+|
+Home Router (DHCP)
+|
++-- Gaming PC (10.0.0.x)
+|
++-- LABHOST01 (10.0.0.53)
+|
++-- VirtualBox NAT (10.0.2.0/24)
+|     |
+|     +-- DC01 Adapter 1 (10.0.2.x - DHCP)
+|
++-- Host-Only Network (192.168.100.0/24)
+      |
+      +-- DC01 Adapter 2 (192.168.100.10)
+      |
+      +-- [Future VMs]
+
+## IP Address Allocation
+
+### Production Network (10.0.0.0/24)
+- Gateway: 10.0.0.1 (Home Router)
+- LABHOST01: 10.0.0.53
+
+### Lab Network (192.168.100.0/24)
+- Network: 192.168.100.0/24
+- VirtualBox Host: 192.168.100.1
+- DC01: 192.168.100.10
+- DHCP Range: 192.168.100.100-200 (future)
+
+### Reserved IPs for Future VMs
+- 192.168.100.11 - DC02 (future)
+- 192.168.100.20 - File Server
+- 192.168.100.30 - pfSense
+- 192.168.100.100-200 - DHCP Clients
