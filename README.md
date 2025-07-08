@@ -9,9 +9,19 @@ This repository contains documentation for my personal IT homelab environment, b
 - Infrastructure as Code
 
 ## Current Projects
-- [x] Host machine configuration (Windows 10 Pro)
-- [x] VirtualBox networking setup
+- [x] Physical host setup (LABHOST01 - Windows 10 Pro)
+- [x] VirtualBox installation and network configuration  
+- [x] Domain Controller deployment (DC01 - Windows Server 2025)
+- [x] Active Directory forest creation (homelab.local)
+- [x] DNS configuration with forwarders
+- [x] DHCP scope configuration (192.168.100.100-200)
+- [x] Organizational Unit structure implementation
+- [x] Security group creation
 - [ ] Active Directory Environment (in progress)
+- [ ] Create test user accounts
+- [ ] Configure Group Policy Objects
+- [ ] Deploy first client workstation
+- [ ] Test domain join and authentication
 - [ ] pfSense Firewall Configuration  
 - [ ] Automated Backup Solutions
 
@@ -25,4 +35,8 @@ This repository contains documentation for my personal IT homelab environment, b
 [Coming Soon]
 
 ## Documentation
-See the `/documentation` folder for detailed setup guides and configurations.
+### Documentation
+- `/documentation/host-setup.md` - Physical host configuration
+- `/documentation/domain-controller/DC01-setup.md` - Domain controller build
+- `/documentation/active-directory/initial-setup.md` - AD configuration
+- `/documentation/network-topology.md` - Network design and IP allocation
