@@ -9,7 +9,9 @@ This repository contains documentation for my personal IT homelab environment, b
 - Infrastructure as Code
 
 ## Current Projects
-- [ ] Active Directory Environment
+- [x] Host machine configuration (Windows 10 Pro)
+- [x] VirtualBox networking setup
+- [ ] Active Directory Environment (in progress)
 - [ ] pfSense Firewall Configuration  
 - [ ] Automated Backup Solutions
 
