@@ -31,6 +31,14 @@ Home Router (DHCP)
 - DC01: 192.168.100.10
 - DHCP Range: 192.168.100.100-200 (future)
 
+## DHCP Configuration
+- Authorized in AD: 7/8/25
+- Scope: 192.168.100.100-200
+- Exclusions: None
+- Reservations: None (yet)
+- Lease Duration: 8 hours
+- Domain Name: homelab.local
+
 ### Reserved IPs for Future VMs
 - 192.168.100.11 - DC02 (future)
 - 192.168.100.20 - File Server
