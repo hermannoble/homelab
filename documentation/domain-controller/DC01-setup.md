@@ -30,6 +30,11 @@
    - Forest Functional Level: Windows Server 2016
    - Domain Functional Level: Windows Server 2016
    - DSRM Password: [Stored in KeePass]
+  
+  ## Post-Installation Optimizations
+    - Installed VirtualBox Guest Additions v7.1.x
+    - Enabled auto-resize guest display
+    - Set video memory to 128MB
 
 3. **FSMO Roles**
    - All roles hosted on DC01 (default for first DC)
